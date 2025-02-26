@@ -1,0 +1,27 @@
+###list users
+GET http://localhost:3000/users
+
+###get user
+
+GET http://localhost:3000/users/user_z7tLtmLvxRQZcW48iPzWt
+
+###create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+	"name": "John",
+	"email": "EMAIL@email.com",
+	"dob": "1990-01-01"
+}
+
+###update user
+PATCH http://localhost:3000/users/user_z7tLtmLvxRQZcW48iPzWt
+Content-Type: application/json
+
+{
+	"email": "teste@email.com"
+}
+
+###remove user
+DELETE http://localhost:3000/users/user_z7tLtmLvxRQZcW48iPzWt
